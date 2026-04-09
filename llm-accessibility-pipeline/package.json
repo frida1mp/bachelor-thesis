@@ -1,14 +1,28 @@
 {
   "name": "llm-accessibility-pipeline",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pipeline for evaluating LLM-based accessibility improvements using Pa11y",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "baseline": "node scripts/runBaseline.js",
-    "prompt": "node scripts/runPrompt.js",
-    "analyze": "node scripts/analyzeResults.js"
+    "prompt1": "node scripts/runPrompt.js prompt1",
+    "prompt2": "node scripts/runPrompt.js prompt2",
+    "analyze": "node scripts/analyzeResults.js",
+    "all": "npm run baseline && npm run prompt1 && npm run prompt2 && npm run analyze"
   },
-  "keywords": [],
+  "keywords": [
+    "llm",
+    "accessibility",
+    "pa11y",
+    "evaluation",
+    "pipeline"
+  ],
   "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "dependencies": {
+    "pa11y": "^8.0.0",
+    "fs-extra": "^11.2.0",
+    "dotenv": "^16.4.0"
+  }
 }
