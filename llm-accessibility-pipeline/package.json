@@ -1,0 +1,14 @@
+{
+  "name": "llm-accessibility-pipeline",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "baseline": "node scripts/runBaseline.js",
+    "prompt": "node scripts/runPrompt.js",
+    "analyze": "node scripts/analyzeResults.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
