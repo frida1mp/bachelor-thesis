@@ -5,6 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "capture-session": "node scripts/captureSession.js",
+    "fetch-sites": "node scripts/fetchSites.js",
     "baseline": "node scripts/runBaseline.js",
     "prompt1": "node scripts/runPrompt.js prompt1",
     "prompt2": "node scripts/runPrompt.js prompt2",
@@ -21,7 +23,9 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
     "pa11y": "^8.0.0",
+    "puppeteer": "^23.0.0",
     "fs-extra": "^11.2.0",
     "dotenv": "^16.4.0"
   }

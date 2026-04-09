@@ -1,0 +1,4 @@
+{
+  "site1": { "url": "https://example.com/page1", "auth": false },
+  "site2": { "url": "https://example.com/page2", "auth": false }
+}
