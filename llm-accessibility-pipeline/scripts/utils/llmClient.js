@@ -22,11 +22,11 @@ export function extractHTML(responseText) {
 }
 
 export async function sendToLLM(systemPrompt, userContent) {
-  const model = process.env.ANTHROPIC_MODEL || 'claude-sonnet-4-20250514';
+  const model = process.env.ANTHROPIC_MODEL || 'claude-haiku-4-5-20251001';
 
-  const response = await client.messages.create({
+  const stream = client.messages.stream({
     model,
-    max_tokens: 16000,
+    max_tokens: 64000,
     system: systemPrompt,
     messages: [
       {
@@ -36,7 +36,9 @@ export async function sendToLLM(systemPrompt, userContent) {
     ],
   });
 
-  const rawText = response.content
+  const finalMessage = await stream.finalMessage();
+
+  const rawText = finalMessage.content
     .filter(block => block.type === 'text')
     .map(block => block.text)
     .join('');
@@ -44,8 +46,8 @@ export async function sendToLLM(systemPrompt, userContent) {
   return {
     html: extractHTML(rawText),
     rawResponse: rawText,
-    usage: response.usage,
-    model: response.model,
-    stopReason: response.stop_reason,
+    usage: finalMessage.usage,
+    model: finalMessage.model,
+    stopReason: finalMessage.stop_reason,
   };
 }
