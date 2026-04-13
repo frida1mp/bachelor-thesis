@@ -100,7 +100,7 @@ async function main() {
     metadata: {
       timestamp: new Date().toISOString(),
       promptName,
-      model: process.env.ANTHROPIC_MODEL || 'claude-sonnet-4-20250514',
+      model: process.env.ANTHROPIC_MODEL || 'claude-haiku-4-5-20251001',
       standard: 'WCAG2AA',
       runner: 'htmlcs',
       siteCount: siteIds.length,

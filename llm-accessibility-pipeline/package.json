@@ -7,11 +7,13 @@
   "scripts": {
     "capture-session": "node scripts/captureSession.js",
     "fetch-sites": "node scripts/fetchSites.js",
+    "clean": "node scripts/cleanHtml.js",
     "baseline": "node scripts/runBaseline.js",
     "prompt1": "node scripts/runPrompt.js prompt1",
     "prompt2": "node scripts/runPrompt.js prompt2",
     "analyze": "node scripts/analyzeResults.js",
-    "all": "npm run baseline && npm run prompt1 && npm run prompt2 && npm run analyze"
+    "archive": "node scripts/archiveRun.js",
+    "all": "npm run baseline && npm run prompt1 && npm run prompt2 && npm run analyze && npm run archive"
   },
   "keywords": [
     "llm",
