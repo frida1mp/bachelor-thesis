@@ -36,7 +36,20 @@ export async function sendToLLM(systemPrompt, userContent) {
     ],
   });
 
-  const finalMessage = await stream.finalMessage();
+  // Log progress so we know it's not stuck
+  let chunks = 0;
+  stream.on('text', () => {
+    chunks++;
+    if (chunks % 200 === 0) process.stdout.write('.');
+  });
+
+  const timeoutMs = 10 * 60 * 1000; // 10 minute timeout
+  const finalMessage = await Promise.race([
+    stream.finalMessage(),
+    new Promise((_, reject) =>
+      setTimeout(() => reject(new Error('API call timed out after 10 minutes')), timeoutMs)
+    ),
+  ]);
 
   const rawText = finalMessage.content
     .filter(block => block.type === 'text')
