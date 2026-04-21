@@ -77,8 +77,8 @@ export async function loadUrls() {
   return readJSON('data/urls.json');
 }
 
-export async function loadCookies() {
-  const filePath = resolvePath('data', 'cookies.json');
+export async function loadCookies(role) {
+  const filePath = resolvePath('data', `cookies-${role}.json`);
   if (await fs.pathExists(filePath)) {
     return fs.readJson(filePath);
   }

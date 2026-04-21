@@ -4,7 +4,6 @@ import { loadUrls, loadCookies, writeHTML } from './utils/fileHandler.js';
 
 async function main() {
   const urls = await loadUrls();
-  const cookies = await loadCookies();
   const entries = Object.entries(urls);
 
   if (entries.length === 0) {
@@ -12,9 +11,14 @@ async function main() {
     process.exit(0);
   }
 
-  const needsAuth = entries.some(([, config]) => config.auth);
-  if (needsAuth && cookies.length === 0) {
-    console.log('Warning: Some URLs require auth but no cookies found. Run "npm run capture-session" first.');
+  // Collect all unique roles and load their cookies
+  const roles = [...new Set(entries.map(([, c]) => c.auth).filter(a => a && a !== false))];
+  const cookiesByRole = {};
+  for (const role of roles) {
+    cookiesByRole[role] = await loadCookies(role);
+    if (cookiesByRole[role].length === 0) {
+      console.log(`Warning: No cookies found for role "${role}". Run "npm run capture-session -- ${role}" first.`);
+    }
   }
 
   console.log(`Fetching ${entries.length} site(s)...\n`);
@@ -25,11 +29,11 @@ async function main() {
     try {
       const page = await browser.newPage();
 
-      if (config.auth && cookies.length > 0) {
-        await page.setCookie(...cookies);
+      if (config.auth && cookiesByRole[config.auth]?.length > 0) {
+        await page.setCookie(...cookiesByRole[config.auth]);
       }
 
-      console.log(`  ${siteId}: ${config.url}`);
+      console.log(`  ${siteId}: ${config.url}${config.auth ? ` (${config.auth})` : ''}`);
       await page.goto(config.url, { waitUntil: 'networkidle0', timeout: 30000 });
 
       const html = await page.content();
