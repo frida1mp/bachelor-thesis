@@ -32,10 +32,10 @@
   "site32": { "url": "https://test.clira.io/upphandling/skapa/0e40d634-cf09-4205-9fec-24a55d33c658/granska", "auth": "buyer" },
   "site33": { "url": "https://test.clira.io/upphandling/skapa", "auth": "buyer" },
   "site34": { "url": "https://test.clira.io/annonserade-upphandlingar", "auth": "buyer" },
-  "site35": { "url": "https://test.clira.io/upphandlingsmallar", "auth": "supplier" },
+  "site35": { "url": "https://test.clira.io/upphandlingsmallar", "auth": "buyer" },
   "site36": { "url": "https://test.clira.io/upphandlingsmallar", "auth": "buyer" },
   "site37": { "url": "https://test.clira.io/avtal", "auth": "buyer" },
-  "site38": { "url": "https://test.clira.io/inventarier", "auth": "supplier" },  
+  "site38": { "url": "https://test.clira.io/inventarier", "auth": "buyer" },  
   "site39": { "url": "https://test.clira.io/planering", "auth": "buyer" },
-  "site40": { "url": "https://test.clira.io/organisationsstruktur", "auth": "supplier" }
+  "site40": { "url": "https://test.clira.io/organisationsstruktur", "auth": "buyer" }
 }
