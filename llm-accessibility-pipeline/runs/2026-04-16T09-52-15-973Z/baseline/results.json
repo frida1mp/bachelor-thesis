@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "timestamp": "2026-04-16T09:52:14.357Z",
+    "standard": "WCAG2AA",
+    "runner": "htmlcs",
+    "siteCount": 2
+  },
+  "sites": {
+    "site1": {
+      "pageUrl": "http://127.0.0.1:62841/site1.html",
+      "documentTitle": "",
+      "issueCount": 2,
+      "errorCount": 2,
+      "warningCount": 0,
+      "issues": [
+        {
+          "code": "WCAG2AA.Principle2.Guideline2_4.2_4_2.H25.1.NoTitleEl",
+          "type": "error",
+          "typeCode": 1,
+          "message": "A title should be provided for the document, using a non-empty title element in the head section.",
+          "context": "<head></head>",
+          "selector": "html > head",
+          "runner": "htmlcs",
+          "runnerExtras": {}
+        },
+        {
+          "code": "WCAG2AA.Principle3.Guideline3_1.3_1_1.H57.2",
+          "type": "error",
+          "typeCode": 1,
+          "message": "The html element should have a lang or xml:lang attribute which describes the language of the document.",
+          "context": "<html><head></head><body></body></html>",
+          "selector": "html",
+          "runner": "htmlcs",
+          "runnerExtras": {}
+        }
+      ]
+    },
+    "site2": {
+      "pageUrl": "http://127.0.0.1:62841/site2.html",
+      "documentTitle": "",
+      "issueCount": 2,
+      "errorCount": 2,
+      "warningCount": 0,
+      "issues": [
+        {
+          "code": "WCAG2AA.Principle2.Guideline2_4.2_4_2.H25.1.NoTitleEl",
+          "type": "error",
+          "typeCode": 1,
+          "message": "A title should be provided for the document, using a non-empty title element in the head section.",
+          "context": "<head></head>",
+          "selector": "html > head",
+          "runner": "htmlcs",
+          "runnerExtras": {}
+        },
+        {
+          "code": "WCAG2AA.Principle3.Guideline3_1.3_1_1.H57.2",
+          "type": "error",
+          "typeCode": 1,
+          "message": "The html element should have a lang or xml:lang attribute which describes the language of the document.",
+          "context": "<html><head></head><body></body></html>",
+          "selector": "html",
+          "runner": "htmlcs",
+          "runnerExtras": {}
+        }
+      ]
+    }
+  }
+}

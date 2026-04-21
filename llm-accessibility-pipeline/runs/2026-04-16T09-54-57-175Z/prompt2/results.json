@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "timestamp": "2026-04-16T10:03:25.504Z",
+    "timestamp": "2026-04-16T09:54:56.960Z",
     "promptName": "prompt2",
     "model": "claude-haiku-4-5-20251001",
     "standard": "WCAG2AA",
@@ -9,21 +9,7 @@
   },
   "sites": {
     "site1": {
-      "pageUrl": "http://127.0.0.1:63242/site1.html",
-      "documentTitle": "Clira - Upphandla med AI",
-      "issueCount": 0,
-      "errorCount": 0,
-      "warningCount": 0,
-      "issues": [],
-      "llmMetadata": {
-        "inputTokens": 30844,
-        "outputTokens": 30350,
-        "model": "claude-haiku-4-5-20251001",
-        "stopReason": "end_turn"
-      }
-    },
-    "site2": {
-      "pageUrl": "http://127.0.0.1:63242/site2.html",
+      "pageUrl": "http://127.0.0.1:62937/site1.html",
       "documentTitle": "Example Domain",
       "issueCount": 0,
       "errorCount": 0,
@@ -32,6 +18,20 @@
       "llmMetadata": {
         "inputTokens": 279,
         "outputTokens": 121,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site2": {
+      "pageUrl": "http://127.0.0.1:62937/site2.html",
+      "documentTitle": "Example Domain",
+      "issueCount": 0,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": [],
+      "llmMetadata": {
+        "inputTokens": 279,
+        "outputTokens": 116,
         "model": "claude-haiku-4-5-20251001",
         "stopReason": "end_turn"
       }

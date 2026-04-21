@@ -1,20 +1,20 @@
 LLM Accessibility Improvement - Results Summary
 ================================================
-Date: 2026-04-16T10:04:36.177Z
+Date: 2026-04-16T09:54:57.175Z
 Model: claude-haiku-4-5-20251001
 Sites tested: 2
 Standard: WCAG2AA
 
 BASELINE
-  Total issues: 2 (2 errors, 0 warnings)
+  Total issues: 0 (0 errors, 0 warnings)
 
 PROMPT 1 (General instruction)
   Total issues: 0 (0 errors, 0 warnings)
-  Reduction: 2 issues (100.0%)
+  Reduction: 0 issues (N/A)
 
 PROMPT 2 (Targeted with Pa11y issues)
   Total issues: 0 (0 errors, 0 warnings)
-  Reduction: 2 issues (100.0%)
+  Reduction: 0 issues (N/A)
 
 PROMPT 2 vs PROMPT 1
   Additional reduction: 0 issues (N/A)
@@ -23,7 +23,7 @@ PER-SITE BREAKDOWN
 ------------------------------------------------------------
 Site           | Baseline  | Prompt1   | Prompt2   
 ------------------------------------------------------------
-site1          | 2         | 0         | 0         
+site1          | 0         | 0         | 0         
 site2          | 0         | 0         | 0         
 ------------------------------------------------------------
 
@@ -31,5 +31,4 @@ PER-CRITERION BREAKDOWN
 --------------------------------------------------------------------------------
 Criterion | Name                          | Base  | P1    | P2    | P1 Red. | P2 Red.
 --------------------------------------------------------------------------------
-4.1.2     | Name, Role, Value             | 2     | 0     | 0     | 100.0%  | 100.0%
 --------------------------------------------------------------------------------

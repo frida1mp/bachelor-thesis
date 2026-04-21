@@ -1,0 +1,11 @@
+{
+  "metadata": {
+    "timestamp": "2026-04-16T09:52:15.813Z",
+    "promptName": "prompt2",
+    "model": "claude-haiku-4-5-20251001",
+    "standard": "WCAG2AA",
+    "runner": "htmlcs",
+    "siteCount": 2
+  },
+  "sites": {}
+}
