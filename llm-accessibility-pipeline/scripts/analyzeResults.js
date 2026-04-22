@@ -1,5 +1,5 @@
 import 'dotenv/config';
-import { readJSON, writeJSON, getProjectRoot } from './utils/fileHandler.js';
+import { readJSON, writeJSON, getProjectRoot, listSiteIds, readHTML } from './utils/fileHandler.js';
 import fs from 'fs-extra';
 import path from 'node:path';
 
@@ -66,6 +66,59 @@ function parseWcagCode(code) {
   return { principle, criterion };
 }
 
+function computeComplexity(html) {
+  const countMatches = (pattern) => (html.match(pattern) || []).length;
+
+  const totalElements = countMatches(/<[a-z][a-z0-9]*[\s>]/gi);
+  const buttons = countMatches(/<button[\s>]/gi);
+  const inputs = countMatches(/<input[\s>]/gi);
+  const selects = countMatches(/<select[\s>]/gi);
+  const textareas = countMatches(/<textarea[\s>]/gi);
+  const links = countMatches(/<a[\s][^>]*href/gi);
+  const images = countMatches(/<img[\s>]/gi);
+  const headings = countMatches(/<h[1-6][\s>]/gi);
+  const forms = countMatches(/<form[\s>]/gi);
+  const labels = countMatches(/<label[\s>]/gi);
+  const ariaAttributes = countMatches(/aria-[a-z]+=/gi);
+  const roleAttributes = countMatches(/role="/gi);
+
+  const interactiveElements = buttons + inputs + selects + textareas + links;
+  const formElements = inputs + selects + textareas + labels;
+
+  return {
+    fileSize: html.length,
+    totalElements,
+    interactiveElements,
+    formElements,
+    buttons,
+    inputs,
+    links,
+    images,
+    headings,
+    forms,
+    ariaAttributes,
+    roleAttributes,
+  };
+}
+
+function pearsonCorrelation(xs, ys) {
+  const n = xs.length;
+  if (n < 3) return null;
+  const meanX = xs.reduce((a, b) => a + b, 0) / n;
+  const meanY = ys.reduce((a, b) => a + b, 0) / n;
+  let num = 0, denX = 0, denY = 0;
+  for (let i = 0; i < n; i++) {
+    const dx = xs[i] - meanX;
+    const dy = ys[i] - meanY;
+    num += dx * dy;
+    denX += dx * dx;
+    denY += dy * dy;
+  }
+  const den = Math.sqrt(denX * denY);
+  if (den === 0) return null;
+  return Number((num / den).toFixed(3));
+}
+
 function countByCriterion(sites) {
   const counts = {};
   for (const site of Object.values(sites)) {
@@ -104,6 +157,17 @@ async function main() {
   const siteIds = Object.keys(baseline.sites).sort();
   const perSite = [];
 
+  // Compute complexity for each site
+  const complexityMap = {};
+  for (const siteId of siteIds) {
+    try {
+      const html = await readHTML(siteId);
+      complexityMap[siteId] = computeComplexity(html);
+    } catch {
+      complexityMap[siteId] = null;
+    }
+  }
+
   for (const siteId of siteIds) {
     const b = baseline.sites[siteId] || { issueCount: 0, errorCount: 0, warningCount: 0 };
     const p1 = prompt1Results.sites?.[siteId] || { issueCount: 0, errorCount: 0, warningCount: 0 };
@@ -111,6 +175,7 @@ async function main() {
 
     perSite.push({
       siteId,
+      complexity: complexityMap[siteId],
       baseline: { errors: b.errorCount, warnings: b.warningCount, total: b.issueCount },
       prompt1: { errors: p1.errorCount, warnings: p1.warningCount, total: p1.issueCount },
       prompt2: { errors: p2.errorCount, warnings: p2.warningCount, total: p2.issueCount },
@@ -199,6 +264,30 @@ async function main() {
       };
     });
 
+  // Correlation: complexity vs reduction percentages
+  const sitesWithComplexity = perSite.filter(s => s.complexity && s.baseline.total > 0);
+  const complexityMetrics = ['totalElements', 'interactiveElements', 'formElements', 'fileSize'];
+  const correlations = {};
+
+  for (const metric of complexityMetrics) {
+    const xs = sitesWithComplexity.map(s => s.complexity[metric]);
+    const p1Ys = sitesWithComplexity.map(s => {
+      const red = (s.baseline.total - s.prompt1.total) / s.baseline.total * 100;
+      return red;
+    });
+    const p2Ys = sitesWithComplexity.map(s => {
+      const red = (s.baseline.total - s.prompt2.total) / s.baseline.total * 100;
+      return red;
+    });
+
+    correlations[metric] = {
+      vsPrompt1Reduction: pearsonCorrelation(xs, p1Ys),
+      vsPrompt2Reduction: pearsonCorrelation(xs, p2Ys),
+    };
+  }
+
+  comparison.complexity = { correlations };
+
   await writeJSON('results/comparison.json', comparison);
 
   // Build summary text
@@ -269,6 +358,82 @@ async function main() {
   }
 
   lines.push('-'.repeat(80));
+  lines.push('');
+
+  // Page complexity breakdown
+  lines.push('PAGE COMPLEXITY');
+  lines.push('-'.repeat(95));
+  lines.push(
+    'Site'.padEnd(10) +
+      '| Elements'.padEnd(11) +
+      '| Interactive'.padEnd(14) +
+      '| Forms'.padEnd(9) +
+      '| Headings'.padEnd(11) +
+      '| ARIA'.padEnd(8) +
+      '| Size'.padEnd(10) +
+      '| Base'.padEnd(7) +
+      '| P1 Red%'.padEnd(10) +
+      '| P2 Red%'
+  );
+  lines.push('-'.repeat(95));
+
+  for (const site of perSite) {
+    const c = site.complexity;
+    if (!c) continue;
+    const p1Red = site.baseline.total > 0
+      ? ((site.baseline.total - site.prompt1.total) / site.baseline.total * 100).toFixed(0) + '%'
+      : 'N/A';
+    const p2Red = site.baseline.total > 0
+      ? ((site.baseline.total - site.prompt2.total) / site.baseline.total * 100).toFixed(0) + '%'
+      : 'N/A';
+    lines.push(
+      site.siteId.padEnd(10) +
+        `| ${String(c.totalElements).padEnd(9)}` +
+        `| ${String(c.interactiveElements).padEnd(12)}` +
+        `| ${String(c.formElements).padEnd(7)}` +
+        `| ${String(c.headings).padEnd(9)}` +
+        `| ${String(c.ariaAttributes).padEnd(6)}` +
+        `| ${String(c.fileSize).padEnd(8)}` +
+        `| ${String(site.baseline.total).padEnd(5)}` +
+        `| ${p1Red.padEnd(8)}` +
+        `| ${p2Red}`
+    );
+  }
+
+  lines.push('-'.repeat(95));
+  lines.push('');
+
+  // Correlation summary
+  lines.push('COMPLEXITY vs REDUCTION CORRELATION (Pearson r)');
+  lines.push('-'.repeat(60));
+  lines.push(
+    'Metric'.padEnd(25) +
+      '| vs P1 Red.'.padEnd(18) +
+      '| vs P2 Red.'
+  );
+  lines.push('-'.repeat(60));
+
+  const metricLabels = {
+    totalElements: 'Total Elements',
+    interactiveElements: 'Interactive Elements',
+    formElements: 'Form Elements',
+    fileSize: 'File Size',
+  };
+
+  for (const [metric, label] of Object.entries(metricLabels)) {
+    const corr = comparison.complexity.correlations[metric];
+    const p1 = corr.vsPrompt1Reduction !== null ? String(corr.vsPrompt1Reduction) : 'N/A';
+    const p2 = corr.vsPrompt2Reduction !== null ? String(corr.vsPrompt2Reduction) : 'N/A';
+    lines.push(
+      label.padEnd(25) +
+        `| ${p1.padEnd(16)}` +
+        `| ${p2}`
+    );
+  }
+
+  lines.push('-'.repeat(60));
+  lines.push('Note: r close to -1 = more complex pages see less reduction');
+  lines.push('      r close to 0 = no correlation');
   lines.push('');
 
   const summaryPath = path.join(getProjectRoot(), 'results', 'summary.txt');

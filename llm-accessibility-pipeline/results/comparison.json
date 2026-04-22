@@ -41,6 +41,20 @@
   "perSite": [
     {
       "siteId": "site1",
+      "complexity": {
+        "fileSize": 73982,
+        "totalElements": 555,
+        "interactiveElements": 55,
+        "formElements": 14,
+        "buttons": 21,
+        "inputs": 9,
+        "links": 25,
+        "images": 5,
+        "headings": 23,
+        "forms": 0,
+        "ariaAttributes": 83,
+        "roleAttributes": 47
+      },
       "baseline": {
         "errors": 2,
         "warnings": 0,
@@ -75,6 +89,20 @@
     },
     {
       "siteId": "site10",
+      "complexity": {
+        "fileSize": 26767,
+        "totalElements": 230,
+        "interactiveElements": 16,
+        "formElements": 5,
+        "buttons": 3,
+        "inputs": 3,
+        "links": 10,
+        "images": 5,
+        "headings": 2,
+        "forms": 0,
+        "ariaAttributes": 74,
+        "roleAttributes": 47
+      },
       "baseline": {
         "errors": 3,
         "warnings": 0,
@@ -109,6 +137,20 @@
     },
     {
       "siteId": "site11",
+      "complexity": {
+        "fileSize": 38746,
+        "totalElements": 250,
+        "interactiveElements": 15,
+        "formElements": 11,
+        "buttons": 4,
+        "inputs": 6,
+        "links": 5,
+        "images": 4,
+        "headings": 1,
+        "forms": 1,
+        "ariaAttributes": 74,
+        "roleAttributes": 41
+      },
       "baseline": {
         "errors": 2,
         "warnings": 0,
@@ -143,6 +185,20 @@
     },
     {
       "siteId": "site12",
+      "complexity": {
+        "fileSize": 38971,
+        "totalElements": 254,
+        "interactiveElements": 16,
+        "formElements": 11,
+        "buttons": 4,
+        "inputs": 6,
+        "links": 6,
+        "images": 4,
+        "headings": 1,
+        "forms": 1,
+        "ariaAttributes": 75,
+        "roleAttributes": 41
+      },
       "baseline": {
         "errors": 2,
         "warnings": 0,
@@ -177,6 +233,20 @@
     },
     {
       "siteId": "site13",
+      "complexity": {
+        "fileSize": 51210,
+        "totalElements": 574,
+        "interactiveElements": 22,
+        "formElements": 1,
+        "buttons": 18,
+        "inputs": 1,
+        "links": 3,
+        "images": 3,
+        "headings": 17,
+        "forms": 0,
+        "ariaAttributes": 104,
+        "roleAttributes": 76
+      },
       "baseline": {
         "errors": 6,
         "warnings": 0,
@@ -211,6 +281,20 @@
     },
     {
       "siteId": "site14",
+      "complexity": {
+        "fileSize": 68623,
+        "totalElements": 609,
+        "interactiveElements": 38,
+        "formElements": 2,
+        "buttons": 14,
+        "inputs": 2,
+        "links": 22,
+        "images": 5,
+        "headings": 7,
+        "forms": 0,
+        "ariaAttributes": 142,
+        "roleAttributes": 98
+      },
       "baseline": {
         "errors": 12,
         "warnings": 0,
@@ -245,6 +329,20 @@
     },
     {
       "siteId": "site15",
+      "complexity": {
+        "fileSize": 43695,
+        "totalElements": 341,
+        "interactiveElements": 24,
+        "formElements": 1,
+        "buttons": 4,
+        "inputs": 1,
+        "links": 19,
+        "images": 3,
+        "headings": 2,
+        "forms": 0,
+        "ariaAttributes": 103,
+        "roleAttributes": 79
+      },
       "baseline": {
         "errors": 2,
         "warnings": 0,
@@ -279,6 +377,20 @@
     },
     {
       "siteId": "site16",
+      "complexity": {
+        "fileSize": 89433,
+        "totalElements": 583,
+        "interactiveElements": 57,
+        "formElements": 4,
+        "buttons": 34,
+        "inputs": 4,
+        "links": 19,
+        "images": 5,
+        "headings": 3,
+        "forms": 1,
+        "ariaAttributes": 176,
+        "roleAttributes": 120
+      },
       "baseline": {
         "errors": 16,
         "warnings": 0,
@@ -313,6 +425,20 @@
     },
     {
       "siteId": "site17",
+      "complexity": {
+        "fileSize": 50158,
+        "totalElements": 414,
+        "interactiveElements": 28,
+        "formElements": 7,
+        "buttons": 5,
+        "inputs": 4,
+        "links": 19,
+        "images": 3,
+        "headings": 7,
+        "forms": 0,
+        "ariaAttributes": 119,
+        "roleAttributes": 88
+      },
       "baseline": {
         "errors": 2,
         "warnings": 0,
@@ -347,6 +473,20 @@
     },
     {
       "siteId": "site18",
+      "complexity": {
+        "fileSize": 64076,
+        "totalElements": 538,
+        "interactiveElements": 41,
+        "formElements": 7,
+        "buttons": 13,
+        "inputs": 5,
+        "links": 23,
+        "images": 5,
+        "headings": 5,
+        "forms": 0,
+        "ariaAttributes": 146,
+        "roleAttributes": 97
+      },
       "baseline": {
         "errors": 12,
         "warnings": 0,
@@ -381,6 +521,20 @@
     },
     {
       "siteId": "site19",
+      "complexity": {
+        "fileSize": 53737,
+        "totalElements": 515,
+        "interactiveElements": 25,
+        "formElements": 2,
+        "buttons": 4,
+        "inputs": 2,
+        "links": 19,
+        "images": 4,
+        "headings": 1,
+        "forms": 0,
+        "ariaAttributes": 111,
+        "roleAttributes": 81
+      },
       "baseline": {
         "errors": 3,
         "warnings": 0,
@@ -415,6 +569,20 @@
     },
     {
       "siteId": "site20",
+      "complexity": {
+        "fileSize": 63562,
+        "totalElements": 456,
+        "interactiveElements": 43,
+        "formElements": 2,
+        "buttons": 7,
+        "inputs": 2,
+        "links": 34,
+        "images": 3,
+        "headings": 8,
+        "forms": 1,
+        "ariaAttributes": 112,
+        "roleAttributes": 85
+      },
       "baseline": {
         "errors": 6,
         "warnings": 0,
@@ -449,6 +617,20 @@
     },
     {
       "siteId": "site21",
+      "complexity": {
+        "fileSize": 68460,
+        "totalElements": 529,
+        "interactiveElements": 33,
+        "formElements": 4,
+        "buttons": 8,
+        "inputs": 2,
+        "links": 21,
+        "images": 3,
+        "headings": 12,
+        "forms": 1,
+        "ariaAttributes": 132,
+        "roleAttributes": 93
+      },
       "baseline": {
         "errors": 11,
         "warnings": 0,
@@ -483,6 +665,20 @@
     },
     {
       "siteId": "site22",
+      "complexity": {
+        "fileSize": 45455,
+        "totalElements": 356,
+        "interactiveElements": 26,
+        "formElements": 1,
+        "buttons": 6,
+        "inputs": 1,
+        "links": 19,
+        "images": 4,
+        "headings": 1,
+        "forms": 0,
+        "ariaAttributes": 106,
+        "roleAttributes": 79
+      },
       "baseline": {
         "errors": 2,
         "warnings": 0,
@@ -517,6 +713,20 @@
     },
     {
       "siteId": "site23",
+      "complexity": {
+        "fileSize": 73875,
+        "totalElements": 782,
+        "interactiveElements": 29,
+        "formElements": 3,
+        "buttons": 7,
+        "inputs": 3,
+        "links": 19,
+        "images": 3,
+        "headings": 2,
+        "forms": 0,
+        "ariaAttributes": 161,
+        "roleAttributes": 105
+      },
       "baseline": {
         "errors": 7,
         "warnings": 0,
@@ -551,6 +761,20 @@
     },
     {
       "siteId": "site24",
+      "complexity": {
+        "fileSize": 106852,
+        "totalElements": 1029,
+        "interactiveElements": 52,
+        "formElements": 64,
+        "buttons": 14,
+        "inputs": 31,
+        "links": 6,
+        "images": 3,
+        "headings": 7,
+        "forms": 1,
+        "ariaAttributes": 267,
+        "roleAttributes": 151
+      },
       "baseline": {
         "errors": 33,
         "warnings": 0,
@@ -585,6 +809,20 @@
     },
     {
       "siteId": "site25",
+      "complexity": {
+        "fileSize": 104690,
+        "totalElements": 991,
+        "interactiveElements": 50,
+        "formElements": 60,
+        "buttons": 14,
+        "inputs": 29,
+        "links": 6,
+        "images": 3,
+        "headings": 7,
+        "forms": 1,
+        "ariaAttributes": 267,
+        "roleAttributes": 151
+      },
       "baseline": {
         "errors": 33,
         "warnings": 0,
@@ -619,6 +857,20 @@
     },
     {
       "siteId": "site26",
+      "complexity": {
+        "fileSize": 106861,
+        "totalElements": 1027,
+        "interactiveElements": 53,
+        "formElements": 66,
+        "buttons": 14,
+        "inputs": 32,
+        "links": 6,
+        "images": 3,
+        "headings": 7,
+        "forms": 1,
+        "ariaAttributes": 267,
+        "roleAttributes": 151
+      },
       "baseline": {
         "errors": 33,
         "warnings": 0,
@@ -653,6 +905,20 @@
     },
     {
       "siteId": "site27",
+      "complexity": {
+        "fileSize": 106852,
+        "totalElements": 1029,
+        "interactiveElements": 52,
+        "formElements": 64,
+        "buttons": 14,
+        "inputs": 31,
+        "links": 6,
+        "images": 3,
+        "headings": 7,
+        "forms": 1,
+        "ariaAttributes": 267,
+        "roleAttributes": 151
+      },
       "baseline": {
         "errors": 33,
         "warnings": 0,
@@ -687,6 +953,20 @@
     },
     {
       "siteId": "site28",
+      "complexity": {
+        "fileSize": 120178,
+        "totalElements": 1043,
+        "interactiveElements": 47,
+        "formElements": 30,
+        "buttons": 19,
+        "inputs": 20,
+        "links": 8,
+        "images": 3,
+        "headings": 18,
+        "forms": 1,
+        "ariaAttributes": 311,
+        "roleAttributes": 181
+      },
       "baseline": {
         "errors": 49,
         "warnings": 0,
@@ -721,6 +1001,20 @@
     },
     {
       "siteId": "site29",
+      "complexity": {
+        "fileSize": 119424,
+        "totalElements": 1016,
+        "interactiveElements": 45,
+        "formElements": 28,
+        "buttons": 19,
+        "inputs": 17,
+        "links": 8,
+        "images": 3,
+        "headings": 30,
+        "forms": 1,
+        "ariaAttributes": 300,
+        "roleAttributes": 174
+      },
       "baseline": {
         "errors": 52,
         "warnings": 0,
@@ -755,6 +1049,20 @@
     },
     {
       "siteId": "site3",
+      "complexity": {
+        "fileSize": 130316,
+        "totalElements": 1254,
+        "interactiveElements": 97,
+        "formElements": 10,
+        "buttons": 68,
+        "inputs": 7,
+        "links": 22,
+        "images": 41,
+        "headings": 1,
+        "forms": 0,
+        "ariaAttributes": 289,
+        "roleAttributes": 126
+      },
       "baseline": {
         "errors": 70,
         "warnings": 0,
@@ -789,6 +1097,20 @@
     },
     {
       "siteId": "site30",
+      "complexity": {
+        "fileSize": 78328,
+        "totalElements": 661,
+        "interactiveElements": 36,
+        "formElements": 12,
+        "buttons": 20,
+        "inputs": 8,
+        "links": 8,
+        "images": 3,
+        "headings": 8,
+        "forms": 2,
+        "ariaAttributes": 233,
+        "roleAttributes": 134
+      },
       "baseline": {
         "errors": 16,
         "warnings": 0,
@@ -823,6 +1145,20 @@
     },
     {
       "siteId": "site31",
+      "complexity": {
+        "fileSize": 64150,
+        "totalElements": 674,
+        "interactiveElements": 37,
+        "formElements": 35,
+        "buttons": 12,
+        "inputs": 18,
+        "links": 7,
+        "images": 3,
+        "headings": 5,
+        "forms": 0,
+        "ariaAttributes": 148,
+        "roleAttributes": 96
+      },
       "baseline": {
         "errors": 8,
         "warnings": 0,
@@ -857,6 +1193,20 @@
     },
     {
       "siteId": "site32",
+      "complexity": {
+        "fileSize": 48045,
+        "totalElements": 469,
+        "interactiveElements": 22,
+        "formElements": 11,
+        "buttons": 10,
+        "inputs": 5,
+        "links": 7,
+        "images": 4,
+        "headings": 7,
+        "forms": 0,
+        "ariaAttributes": 123,
+        "roleAttributes": 87
+      },
       "baseline": {
         "errors": 4,
         "warnings": 0,
@@ -891,6 +1241,20 @@
     },
     {
       "siteId": "site33",
+      "complexity": {
+        "fileSize": 31935,
+        "totalElements": 276,
+        "interactiveElements": 12,
+        "formElements": 9,
+        "buttons": 3,
+        "inputs": 4,
+        "links": 4,
+        "images": 3,
+        "headings": 1,
+        "forms": 1,
+        "ariaAttributes": 97,
+        "roleAttributes": 65
+      },
       "baseline": {
         "errors": 4,
         "warnings": 0,
@@ -925,6 +1289,20 @@
     },
     {
       "siteId": "site34",
+      "complexity": {
+        "fileSize": 60388,
+        "totalElements": 633,
+        "interactiveElements": 54,
+        "formElements": 48,
+        "buttons": 26,
+        "inputs": 25,
+        "links": 3,
+        "images": 3,
+        "headings": 0,
+        "forms": 0,
+        "ariaAttributes": 146,
+        "roleAttributes": 79
+      },
       "baseline": {
         "errors": 16,
         "warnings": 0,
@@ -959,6 +1337,20 @@
     },
     {
       "siteId": "site36",
+      "complexity": {
+        "fileSize": 53423,
+        "totalElements": 581,
+        "interactiveElements": 12,
+        "formElements": 3,
+        "buttons": 6,
+        "inputs": 3,
+        "links": 3,
+        "images": 23,
+        "headings": 1,
+        "forms": 0,
+        "ariaAttributes": 117,
+        "roleAttributes": 82
+      },
       "baseline": {
         "errors": 29,
         "warnings": 0,
@@ -993,6 +1385,20 @@
     },
     {
       "siteId": "site37",
+      "complexity": {
+        "fileSize": 51575,
+        "totalElements": 537,
+        "interactiveElements": 31,
+        "formElements": 2,
+        "buttons": 18,
+        "inputs": 2,
+        "links": 11,
+        "images": 17,
+        "headings": 2,
+        "forms": 0,
+        "ariaAttributes": 130,
+        "roleAttributes": 71
+      },
       "baseline": {
         "errors": 21,
         "warnings": 0,
@@ -1027,6 +1433,20 @@
     },
     {
       "siteId": "site38",
+      "complexity": {
+        "fileSize": 48321,
+        "totalElements": 473,
+        "interactiveElements": 12,
+        "formElements": 3,
+        "buttons": 6,
+        "inputs": 3,
+        "links": 3,
+        "images": 3,
+        "headings": 9,
+        "forms": 0,
+        "ariaAttributes": 106,
+        "roleAttributes": 73
+      },
       "baseline": {
         "errors": 6,
         "warnings": 0,
@@ -1061,6 +1481,20 @@
     },
     {
       "siteId": "site39",
+      "complexity": {
+        "fileSize": 61246,
+        "totalElements": 487,
+        "interactiveElements": 14,
+        "formElements": 3,
+        "buttons": 8,
+        "inputs": 3,
+        "links": 3,
+        "images": 3,
+        "headings": 1,
+        "forms": 0,
+        "ariaAttributes": 102,
+        "roleAttributes": 68
+      },
       "baseline": {
         "errors": 6,
         "warnings": 0,
@@ -1095,6 +1529,20 @@
     },
     {
       "siteId": "site4",
+      "complexity": {
+        "fileSize": 47382,
+        "totalElements": 448,
+        "interactiveElements": 30,
+        "formElements": 2,
+        "buttons": 15,
+        "inputs": 2,
+        "links": 13,
+        "images": 5,
+        "headings": 6,
+        "forms": 0,
+        "ariaAttributes": 100,
+        "roleAttributes": 60
+      },
       "baseline": {
         "errors": 12,
         "warnings": 0,
@@ -1129,6 +1577,20 @@
     },
     {
       "siteId": "site40",
+      "complexity": {
+        "fileSize": 50887,
+        "totalElements": 378,
+        "interactiveElements": 8,
+        "formElements": 1,
+        "buttons": 3,
+        "inputs": 1,
+        "links": 4,
+        "images": 5,
+        "headings": 1,
+        "forms": 0,
+        "ariaAttributes": 150,
+        "roleAttributes": 89
+      },
       "baseline": {
         "errors": 3,
         "warnings": 0,
@@ -1163,6 +1625,20 @@
     },
     {
       "siteId": "site5",
+      "complexity": {
+        "fileSize": 68983,
+        "totalElements": 443,
+        "interactiveElements": 46,
+        "formElements": 4,
+        "buttons": 32,
+        "inputs": 4,
+        "links": 10,
+        "images": 5,
+        "headings": 3,
+        "forms": 1,
+        "ariaAttributes": 135,
+        "roleAttributes": 82
+      },
       "baseline": {
         "errors": 14,
         "warnings": 0,
@@ -1197,6 +1673,20 @@
     },
     {
       "siteId": "site6",
+      "complexity": {
+        "fileSize": 40561,
+        "totalElements": 373,
+        "interactiveElements": 29,
+        "formElements": 7,
+        "buttons": 10,
+        "inputs": 5,
+        "links": 14,
+        "images": 5,
+        "headings": 5,
+        "forms": 0,
+        "ariaAttributes": 98,
+        "roleAttributes": 55
+      },
       "baseline": {
         "errors": 10,
         "warnings": 0,
@@ -1231,6 +1721,20 @@
     },
     {
       "siteId": "site7",
+      "complexity": {
+        "fileSize": 38193,
+        "totalElements": 295,
+        "interactiveElements": 18,
+        "formElements": 2,
+        "buttons": 5,
+        "inputs": 2,
+        "links": 11,
+        "images": 3,
+        "headings": 7,
+        "forms": 1,
+        "ariaAttributes": 76,
+        "roleAttributes": 48
+      },
       "baseline": {
         "errors": 5,
         "warnings": 0,
@@ -1265,6 +1769,20 @@
     },
     {
       "siteId": "site8",
+      "complexity": {
+        "fileSize": 34156,
+        "totalElements": 275,
+        "interactiveElements": 17,
+        "formElements": 1,
+        "buttons": 2,
+        "inputs": 1,
+        "links": 14,
+        "images": 5,
+        "headings": 5,
+        "forms": 0,
+        "ariaAttributes": 81,
+        "roleAttributes": 52
+      },
       "baseline": {
         "errors": 2,
         "warnings": 0,
@@ -1299,6 +1817,20 @@
     },
     {
       "siteId": "site9",
+      "complexity": {
+        "fileSize": 59354,
+        "totalElements": 472,
+        "interactiveElements": 32,
+        "formElements": 30,
+        "buttons": 5,
+        "inputs": 14,
+        "links": 12,
+        "images": 4,
+        "headings": 1,
+        "forms": 1,
+        "ariaAttributes": 151,
+        "roleAttributes": 84
+      },
       "baseline": {
         "errors": 6,
         "warnings": 0,
@@ -1396,5 +1928,25 @@
       "prompt1ReductionPct": "0.0%",
       "prompt2ReductionPct": "100.0%"
     }
-  ]
+  ],
+  "complexity": {
+    "correlations": {
+      "totalElements": {
+        "vsPrompt1Reduction": -0.232,
+        "vsPrompt2Reduction": -0.331
+      },
+      "interactiveElements": {
+        "vsPrompt1Reduction": 0.012,
+        "vsPrompt2Reduction": -0.196
+      },
+      "formElements": {
+        "vsPrompt1Reduction": -0.445,
+        "vsPrompt2Reduction": -0.488
+      },
+      "fileSize": {
+        "vsPrompt1Reduction": -0.286,
+        "vsPrompt2Reduction": -0.339
+      }
+    }
+  }
 }
