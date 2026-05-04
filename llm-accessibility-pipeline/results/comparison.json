@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "timestamp": "2026-04-22T06:40:12.730Z",
+    "timestamp": "2026-05-04T14:10:24.867Z",
     "totalSites": 38,
     "baselineTimestamp": "2026-04-21T14:39:32.739Z",
     "prompt1Timestamp": "2026-04-21T16:42:28.142Z",
@@ -1948,5 +1948,88 @@
         "vsPrompt2Reduction": -0.339
       }
     }
-  }
+  },
+  "byTheme": [
+    {
+      "label": "Transactional / task-oriented",
+      "siteCount": 2,
+      "avgBaselineIssues": 30,
+      "avgPrompt1ReductionPct": 25,
+      "avgPrompt2ReductionPct": 83.7
+    },
+    {
+      "label": "Navigation / listing page",
+      "siteCount": 3,
+      "avgBaselineIssues": 22,
+      "avgPrompt1ReductionPct": 88.3,
+      "avgPrompt2ReductionPct": 97.9
+    },
+    {
+      "label": "Form-heavy / data-entry",
+      "siteCount": 8,
+      "avgBaselineIssues": 18.3,
+      "avgPrompt1ReductionPct": 20.7,
+      "avgPrompt2ReductionPct": 87
+    },
+    {
+      "label": "Dashboard / application interface",
+      "siteCount": 23,
+      "avgBaselineIssues": 11.9,
+      "avgPrompt1ReductionPct": 52.3,
+      "avgPrompt2ReductionPct": 98
+    },
+    {
+      "label": "Informational / documentation",
+      "siteCount": 2,
+      "avgBaselineIssues": 3.5,
+      "avgPrompt1ReductionPct": 80,
+      "avgPrompt2ReductionPct": 90
+    }
+  ],
+  "byTargetAudience": [
+    {
+      "label": "internal user",
+      "siteCount": 37,
+      "avgBaselineIssues": 14.9,
+      "avgPrompt1ReductionPct": 47.1,
+      "avgPrompt2ReductionPct": 94.4
+    },
+    {
+      "label": "customer",
+      "siteCount": 1,
+      "avgBaselineIssues": 2,
+      "avgPrompt1ReductionPct": 100,
+      "avgPrompt2ReductionPct": 100
+    }
+  ],
+  "byCommunicationIntent": [
+    {
+      "label": "guide",
+      "siteCount": 1,
+      "avgBaselineIssues": 29,
+      "avgPrompt1ReductionPct": 96.6,
+      "avgPrompt2ReductionPct": 100
+    },
+    {
+      "label": "collect input",
+      "siteCount": 8,
+      "avgBaselineIssues": 18.3,
+      "avgPrompt1ReductionPct": 20.7,
+      "avgPrompt2ReductionPct": 87
+    },
+    {
+      "label": "enable task completion",
+      "siteCount": 26,
+      "avgBaselineIssues": 14.2,
+      "avgPrompt1ReductionPct": 54.6,
+      "avgPrompt2ReductionPct": 96.7
+    },
+    {
+      "label": "inform",
+      "siteCount": 3,
+      "avgBaselineIssues": 3,
+      "avgPrompt1ReductionPct": 53.3,
+      "avgPrompt2ReductionPct": 93.3
+    }
+  ]
 }

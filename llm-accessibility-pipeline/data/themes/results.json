@@ -1,0 +1,579 @@
+{
+  "metadata": {
+    "timestamp": "2026-05-04T14:04:16.542Z",
+    "model": "claude-haiku-4-5-20251001",
+    "siteCount": 38
+  },
+  "sites": {
+    "site1": {
+      "primaryTheme": "Informational / documentation",
+      "secondaryTheme": "Marketing / promotional",
+      "targetAudience": "customer",
+      "communicationIntent": "inform",
+      "visualContentEmphasis": "mixed",
+      "confidence": "high",
+      "shortReason": "The page is primarily a product/service documentation page for Clira API, explaining features, benefits, and use cases. It combines informational content (API capabilities, technical details) with marketing elements (value propositions, call-to-action buttons) to educate potential customers about the service and encourage them to get in touch.",
+      "llmMetadata": {
+        "inputTokens": 30572,
+        "outputTokens": 155,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site10": {
+      "primaryTheme": "Dashboard / application interface",
+      "secondaryTheme": "Navigation / listing page",
+      "targetAudience": "internal user",
+      "communicationIntent": "enable task completion",
+      "visualContentEmphasis": "interaction/forms",
+      "confidence": "high",
+      "shortReason": "This is a business application interface showing a company profile (GlobålTech Sverige AB) with organized tabs for managing contacts, reviews, departments, etc. The layout uses a sidebar navigation, header with breadcrumbs, and a main content area displaying contact management functionality with radio buttons, avatars, and an 'add contact' button. The interface is designed for internal users to manage organizational data and contacts within what appears to be a procurement/supplier management platform called 'Esource by Clira'.",
+      "llmMetadata": {
+        "inputTokens": 12722,
+        "outputTokens": 199,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site11": {
+      "primaryTheme": "Form-heavy / data-entry",
+      "secondaryTheme": "Dashboard / application interface",
+      "targetAudience": "internal user",
+      "communicationIntent": "collect input",
+      "visualContentEmphasis": "interaction/forms",
+      "confidence": "high",
+      "shortReason": "This is a user profile management page with a form containing multiple input fields (first name, last name, email, phone, profile image upload). The page displays user-specific information and allows editing/updating of profile data. The layout includes a sidebar navigation and header typical of an internal application interface, but the primary focus is the form for data entry and modification.",
+      "llmMetadata": {
+        "inputTokens": 21702,
+        "outputTokens": 167,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site12": {
+      "primaryTheme": "Form-heavy / data-entry",
+      "secondaryTheme": "Dashboard / application interface",
+      "targetAudience": "internal user",
+      "communicationIntent": "collect input",
+      "visualContentEmphasis": "interaction/forms",
+      "confidence": "high",
+      "shortReason": "Page is a user profile editing form with multiple input fields (first name, last name, email, phone, profile image upload). It includes a sidebar navigation menu and header typical of an internal application interface. The form layout with disabled email field and save button indicates data collection and profile management functionality for logged-in users.",
+      "llmMetadata": {
+        "inputTokens": 21794,
+        "outputTokens": 158,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site13": {
+      "primaryTheme": "Dashboard / application interface",
+      "secondaryTheme": "Navigation / listing page",
+      "targetAudience": "internal user",
+      "communicationIntent": "enable task completion",
+      "visualContentEmphasis": "mixed",
+      "confidence": "high",
+      "shortReason": "This is a procurement management dashboard (Esource by Clira) with a left sidebar navigation menu, header with user controls, and main content area displaying procurement metrics, tables, charts, and notifications. The interface shows active procurements, agreements, products, planning, organizational structure, and forms. Multiple data visualizations (charts, cards with metrics) and interactive tables dominate the layout, supporting task management and data monitoring for internal procurement users.",
+      "llmMetadata": {
+        "inputTokens": 22079,
+        "outputTokens": 182,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site14": {
+      "primaryTheme": "Dashboard / application interface",
+      "secondaryTheme": "Informational / documentation",
+      "targetAudience": "internal user",
+      "communicationIntent": "enable task completion",
+      "visualContentEmphasis": "mixed",
+      "confidence": "high",
+      "shortReason": "This is a procurement management dashboard (Esource by Clira) displaying detailed information about a specific procurement process ('Testsignatures'). It features a left navigation sidebar with multiple modules (procurements, agreements, products, planning, etc.), a header with breadcrumbs and user controls, and a main content area showing procurement details, documents, and metadata. The page enables users to manage and interact with procurement tasks through various tabs and downloadable documents, characteristic of an internal business application interface.",
+      "llmMetadata": {
+        "inputTokens": 32841,
+        "outputTokens": 196,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site15": {
+      "primaryTheme": "Dashboard / application interface",
+      "secondaryTheme": "Navigation / listing page",
+      "targetAudience": "internal user",
+      "communicationIntent": "enable task completion",
+      "visualContentEmphasis": "interaction/forms",
+      "confidence": "high",
+      "shortReason": "This is a procurement management platform (Esource by Clira) showing a detailed procurement record view with multiple navigation tabs (reminders, suppliers, notes, messages, etc.), a sidebar menu for different modules, and interactive elements for managing procurement processes. The interface is designed for internal procurement officers to manage and track procurement workflows.",
+      "llmMetadata": {
+        "inputTokens": 21023,
+        "outputTokens": 159,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site16": {
+      "primaryTheme": "Dashboard / application interface",
+      "secondaryTheme": "Transactional / task-oriented",
+      "targetAudience": "internal user",
+      "communicationIntent": "enable task completion",
+      "visualContentEmphasis": "interaction/forms",
+      "confidence": "high",
+      "shortReason": "This is a procurement management platform (Esource by Clira) showing a messaging/communication interface within a specific procurement project. The layout features a left sidebar navigation menu, main content area with message threads, and a message composition form with rich text editor. It's designed for internal users (procurement professionals) to manage procurements, view messages, and interact with vendors. The focus is on enabling task completion through forms, messaging, and document management within a structured application interface.",
+      "llmMetadata": {
+        "inputTokens": 44686,
+        "outputTokens": 194,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site17": {
+      "primaryTheme": "Dashboard / application interface",
+      "secondaryTheme": "Navigation / listing page",
+      "targetAudience": "internal user",
+      "communicationIntent": "enable task completion",
+      "visualContentEmphasis": "mixed",
+      "confidence": "high",
+      "shortReason": "This is a procurement management dashboard (Esource by Clira) showing a Questions & Answers section within a procurement process. It features a left sidebar with navigation menus, top header with breadcrumbs, main content area with tabs for different procurement sections, metric cards showing statistics (unanswered/answered/archived questions), and filters. The interface is designed for internal users managing procurement workflows and enabling task completion through various interactive elements like buttons, segmented controls, and data display.",
+      "llmMetadata": {
+        "inputTokens": 24085,
+        "outputTokens": 192,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site18": {
+      "primaryTheme": "Dashboard / application interface",
+      "secondaryTheme": "Navigation / listing page",
+      "targetAudience": "internal user",
+      "communicationIntent": "enable task completion",
+      "visualContentEmphasis": "mixed",
+      "confidence": "high",
+      "shortReason": "This is a procurement management dashboard showing bid responses (anbudssvar) for a specific procurement. It features a complex interface with navigation menus, filtering/sorting capabilities, detailed data tables with supplier information, bid amounts, and decision tracking. The layout supports task completion with action buttons, expandable rows, and multiple navigation tabs for different procurement phases.",
+      "llmMetadata": {
+        "inputTokens": 30796,
+        "outputTokens": 161,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site19": {
+      "primaryTheme": "Dashboard / application interface",
+      "secondaryTheme": "Transactional / task-oriented",
+      "targetAudience": "internal user",
+      "communicationIntent": "enable task completion",
+      "visualContentEmphasis": "mixed",
+      "confidence": "high",
+      "shortReason": "This is a procurement evaluation/comparison interface within the Clira platform. It displays a data table for comparing supplier bids across multiple evaluation criteria, with filtering, export, and navigation controls. The sidebar navigation, header breadcrumbs, and structured data presentation indicate this is an internal workflow tool for managing procurement evaluations, not a customer-facing or promotional page.",
+      "llmMetadata": {
+        "inputTokens": 24944,
+        "outputTokens": 169,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site20": {
+      "primaryTheme": "Dashboard / application interface",
+      "secondaryTheme": "Transactional / task-oriented",
+      "targetAudience": "internal user",
+      "communicationIntent": "enable task completion",
+      "visualContentEmphasis": "interaction/forms",
+      "confidence": "high",
+      "shortReason": "This is a procurement management platform (Esource by Clira) displaying an evaluation protocol document within a complex dashboard interface. The page shows a multi-tab navigation system, document viewer with evaluation report content, signature management section, and downloadable PDF options. The layout uses a collapsed sidebar menu, breadcrumb navigation, and multiple interactive elements (buttons, menus, tabs) typical of enterprise application interfaces designed for internal users to manage procurement workflows and documents.",
+      "llmMetadata": {
+        "inputTokens": 28898,
+        "outputTokens": 190,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site21": {
+      "primaryTheme": "Dashboard / application interface",
+      "secondaryTheme": "Transactional / task-oriented",
+      "targetAudience": "internal user",
+      "communicationIntent": "enable task completion",
+      "visualContentEmphasis": "mixed",
+      "confidence": "high",
+      "shortReason": "This is a procurement management platform (Esource by Clira) showing a detailed award decision document view. It features a complex navigation structure with tabs, sidebars, multiple document sections, signature verification, and recipient tracking. The interface supports document review, Q&A, email notifications, and administrative tasks related to procurement processes. Users can view, download, and manage award decisions and related documents within a structured dashboard environment.",
+      "llmMetadata": {
+        "inputTokens": 32888,
+        "outputTokens": 181,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site22": {
+      "primaryTheme": "Dashboard / application interface",
+      "secondaryTheme": "Navigation / listing page",
+      "targetAudience": "internal user",
+      "communicationIntent": "enable task completion",
+      "visualContentEmphasis": "mixed",
+      "confidence": "high",
+      "shortReason": "This is a complex internal procurement and contract management application (Esource by Clira). The page shows a detailed dashboard with a collapsible sidebar navigation, multiple tabs for contract management (Overview, Activity log, Suppliers, Notes, Reminders, Messages, Q&A, Bid responses, Evaluation, etc.), and a main content area displaying contract information. The UI emphasizes task completion and navigation through various procurement workflow stages, typical of enterprise application interfaces.",
+      "llmMetadata": {
+        "inputTokens": 21912,
+        "outputTokens": 187,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site23": {
+      "primaryTheme": "Dashboard / application interface",
+      "secondaryTheme": "Navigation / listing page",
+      "targetAudience": "internal user",
+      "communicationIntent": "enable task completion",
+      "visualContentEmphasis": "mixed",
+      "confidence": "high",
+      "shortReason": "This is a procurement management dashboard (Esource by Clira) showing a detailed email tracking interface for a specific procurement process. It features a collapsible sidebar navigation, tabbed content sections, email list with status tracking (using step indicators), search functionality, and pagination - all characteristic of an internal business application designed for users to manage and monitor procurement workflows.",
+      "llmMetadata": {
+        "inputTokens": 33764,
+        "outputTokens": 164,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site24": {
+      "primaryTheme": "Form-heavy / data-entry",
+      "secondaryTheme": "Dashboard / application interface",
+      "targetAudience": "internal user",
+      "communicationIntent": "collect input",
+      "visualContentEmphasis": "interaction/forms",
+      "confidence": "high",
+      "shortReason": "The page is a multi-step procurement form interface with extensive form fields (text inputs, dropdowns, date pickers, checkboxes), progress indicators, and a sidebar containing checklists and instructions. The primary focus is on collecting structured data for creating a direct procurement ('Direktupphandling') with multiple form sections and validation states. The layout includes a navigation sidebar, progress steps, and contextual guidance panels, making it a form-driven application interface for internal administrative users.",
+      "llmMetadata": {
+        "inputTokens": 48397,
+        "outputTokens": 193,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site25": {
+      "primaryTheme": "Form-heavy / data-entry",
+      "secondaryTheme": "Transactional / task-oriented",
+      "targetAudience": "internal user",
+      "communicationIntent": "collect input",
+      "visualContentEmphasis": "interaction/forms",
+      "confidence": "high",
+      "shortReason": "This is a multi-step procurement form interface within an internal platform (Esource by Clira). The page shows a form-based wizard for creating/editing a direct procurement ('direktupphandling') with multiple sections (General, Specification, Dates, Additional data). It contains extensive form fields, input validation, step navigation, checklists, and instructions. The emphasis is on collecting structured data from internal users managing procurement processes, with secondary transactional elements like saving and progressing through workflow steps.",
+      "llmMetadata": {
+        "inputTokens": 47579,
+        "outputTokens": 204,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site26": {
+      "primaryTheme": "Form-heavy / data-entry",
+      "secondaryTheme": "Transactional / task-oriented",
+      "targetAudience": "internal user",
+      "communicationIntent": "collect input",
+      "visualContentEmphasis": "interaction/forms",
+      "confidence": "high",
+      "shortReason": "This is a procurement management application (Esource by Clira) showing a multi-step form for creating a direct procurement ('Direktupphandling'). The page displays step 3 (Dates) of a form wizard with multiple date fields, input controls, and a progress tracker. The right sidebar shows checklists and instructions. The interface is designed for internal users to enter procurement details across multiple form sections.",
+      "llmMetadata": {
+        "inputTokens": 48342,
+        "outputTokens": 186,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site27": {
+      "primaryTheme": "Form-heavy / data-entry",
+      "secondaryTheme": "Transactional / task-oriented",
+      "targetAudience": "internal user",
+      "communicationIntent": "collect input",
+      "visualContentEmphasis": "interaction/forms",
+      "confidence": "high",
+      "shortReason": "This is a procurement management form interface with multi-step wizard (Allmänt, Specifikation, Datum, Tilläggsdata), extensive form fields for data entry, and progress tracking. The page is designed for internal users to create and edit procurement processes, with significant interaction/form elements including inputs, date pickers, dropdowns, and checklists.",
+      "llmMetadata": {
+        "inputTokens": 48397,
+        "outputTokens": 176,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site28": {
+      "primaryTheme": "Dashboard / application interface",
+      "secondaryTheme": "Form-heavy / data-entry",
+      "targetAudience": "internal user",
+      "communicationIntent": "enable task completion",
+      "visualContentEmphasis": "interaction/forms",
+      "confidence": "high",
+      "shortReason": "This is a procurement management platform (Esource by Clira) showing a detailed procurement sub-task interface. The page displays a multi-step wizard (Definiera, Underlag, Leverantörer, Granska, Annonsera) with tabbed content sections containing editable fields, checkboxes, file uploads, and form inputs. The layout includes navigation sidebars, action buttons, and a right panel with checklists and instructions. This is clearly an internal business application for managing procurement workflows, combining dashboard elements with extensive form interaction capabilities.",
+      "llmMetadata": {
+        "inputTokens": 55742,
+        "outputTokens": 215,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site29": {
+      "primaryTheme": "Transactional / task-oriented",
+      "secondaryTheme": "Dashboard / application interface",
+      "targetAudience": "internal user",
+      "communicationIntent": "enable task completion",
+      "visualContentEmphasis": "interaction/forms",
+      "confidence": "high",
+      "shortReason": "This is a procurement/tendering platform (Esource by Clira) showing a detailed workflow step for creating procurement documentation. The page displays form fields, evaluation criteria, checklists, and navigation elements for completing a procurement process. Multiple interactive tabs, input fields, dropdowns, and checkboxes indicate this is primarily designed to guide users through task completion rather than provide information or persuade.",
+      "llmMetadata": {
+        "inputTokens": 54856,
+        "outputTokens": 178,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site3": {
+      "primaryTheme": "Dashboard / application interface",
+      "secondaryTheme": "Navigation / listing page",
+      "targetAudience": "internal user",
+      "communicationIntent": "enable task completion",
+      "visualContentEmphasis": "interaction/forms",
+      "confidence": "high",
+      "shortReason": "This is a Swedish-language procurement management dashboard showing a data-heavy table of 'Upphandlingar' (procurements) with filtering, sorting, pagination, and action buttons. The interface uses Ant Design components (ant-table, ant-menu, ant-pagination) and includes status badges, user avatars, and interactive controls typical of internal business applications for managing procurement processes.",
+      "llmMetadata": {
+        "inputTokens": 58951,
+        "outputTokens": 174,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site30": {
+      "primaryTheme": "Dashboard / application interface",
+      "secondaryTheme": "Form-heavy / data-entry",
+      "targetAudience": "internal user",
+      "communicationIntent": "enable task completion",
+      "visualContentEmphasis": "interaction/forms",
+      "confidence": "high",
+      "shortReason": "This is a procurement management platform (Esource by Clira) showing a detailed procurement workflow dashboard. The page displays a multi-step process (Definiera, Underlag, Leverantörer, Granska, Annonsera) with tabs for managing different document types (evaluation models, price documents, ESPD, contract forms, bids, evaluation forms, attachments). Multiple interactive elements including file upload forms, checklists, checkboxes, and navigation controls indicate this is primarily an internal application interface for managing procurement tasks, with heavy form-based interaction elements throughout.",
+      "llmMetadata": {
+        "inputTokens": 37577,
+        "outputTokens": 220,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site31": {
+      "primaryTheme": "Transactional / task-oriented",
+      "secondaryTheme": "Dashboard / application interface",
+      "targetAudience": "internal user",
+      "communicationIntent": "enable task completion",
+      "visualContentEmphasis": "interaction/forms",
+      "confidence": "high",
+      "shortReason": "This is a procurement management workflow page showing step 3 of a multi-step process (Leverantörer/Suppliers). It displays a data transfer interface with tables for selecting and managing suppliers for a procurement process, along with navigation controls, checklists, and instructions. The design emphasizes task completion through interactive form elements, data tables, and workflow progression.",
+      "llmMetadata": {
+        "inputTokens": 28841,
+        "outputTokens": 172,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site32": {
+      "primaryTheme": "Dashboard / application interface",
+      "secondaryTheme": "Form-heavy / data-entry",
+      "targetAudience": "internal user",
+      "communicationIntent": "enable task completion",
+      "visualContentEmphasis": "mixed",
+      "confidence": "high",
+      "shortReason": "This is a procurement management platform (Esource by Clira) showing a multi-step workflow interface for creating and reviewing a procurement process. The page displays step 4 (Review/Granska) with checklists, form controls, navigation elements, and task-oriented UI components. The left sidebar with menu items, breadcrumb navigation, progress indicators, and interactive forms indicate this is an internal application dashboard for procurement professionals to manage purchasing workflows.",
+      "llmMetadata": {
+        "inputTokens": 21685,
+        "outputTokens": 188,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site33": {
+      "primaryTheme": "Form-heavy / data-entry",
+      "secondaryTheme": "Dashboard / application interface",
+      "targetAudience": "internal user",
+      "communicationIntent": "collect input",
+      "visualContentEmphasis": "interaction/forms",
+      "confidence": "high",
+      "shortReason": "This is a procurement management platform (Esource by Clira) displaying a form for creating an advertised procurement ('Skapa annonserad upphandling'). The page contains a multi-field form with inputs for title, location (NUTS), procedure type, and description, along with a sidebar navigation menu typical of internal business applications. The primary intent is to collect structured data from internal users for procurement creation.",
+      "llmMetadata": {
+        "inputTokens": 14697,
+        "outputTokens": 181,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site34": {
+      "primaryTheme": "Navigation / listing page",
+      "secondaryTheme": "Dashboard / application interface",
+      "targetAudience": "internal user",
+      "communicationIntent": "enable task completion",
+      "visualContentEmphasis": "interaction/forms",
+      "confidence": "high",
+      "shortReason": "Page displays a data table of advertised procurements with filtering, sorting, and action controls (follow, save, hide). It's a listing/browsing interface for internal users to manage and interact with procurement announcements, with sidebar navigation and header controls typical of application interfaces.",
+      "llmMetadata": {
+        "inputTokens": 26332,
+        "outputTokens": 149,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site36": {
+      "primaryTheme": "Navigation / listing page",
+      "secondaryTheme": "Dashboard / application interface",
+      "targetAudience": "internal user",
+      "communicationIntent": "guide",
+      "visualContentEmphasis": "mixed",
+      "confidence": "high",
+      "shortReason": "This is a procurement templates management interface showing a filterable data table with multiple templates. It features a left sidebar navigation menu, header with user controls, and a main content area displaying procurement templates in a structured table format with filtering and pagination capabilities. The primary purpose is to list and navigate between templates within an internal procurement management system (Esource by Clira platform).",
+      "llmMetadata": {
+        "inputTokens": 23773,
+        "outputTokens": 164,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site37": {
+      "primaryTheme": "Navigation / listing page",
+      "secondaryTheme": "Dashboard / application interface",
+      "targetAudience": "internal user",
+      "communicationIntent": "enable task completion",
+      "visualContentEmphasis": "mixed",
+      "confidence": "high",
+      "shortReason": "This is a contract management interface within Esource/Clira platform. The page displays a searchable, filterable table of 98 agreements with columns for contract name, categories, status, end date, and suppliers. It includes navigation menus, filter controls, and pagination—typical of an internal business application for managing and viewing contracts. The secondary theme reflects dashboard-like controls for organizing and accessing agreement data.",
+      "llmMetadata": {
+        "inputTokens": 22878,
+        "outputTokens": 176,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site38": {
+      "primaryTheme": "Dashboard / application interface",
+      "secondaryTheme": "Navigation / listing page",
+      "targetAudience": "internal user",
+      "communicationIntent": "enable task completion",
+      "visualContentEmphasis": "mixed",
+      "confidence": "high",
+      "shortReason": "This is an inventory management dashboard (Inventarium) within the Clira B2B procurement platform. It displays a data table of products with operational details (cost, units, quantities, suppliers), navigation menus for procurements/agreements/planning, and controls for managing inventory. The interface is designed for internal organizational users to view, search, and manage products and related agreements. The layout combines structured data presentation with task-oriented navigation and interaction elements.",
+      "llmMetadata": {
+        "inputTokens": 22732,
+        "outputTokens": 184,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site39": {
+      "primaryTheme": "Dashboard / application interface",
+      "secondaryTheme": "Navigation / listing page",
+      "targetAudience": "internal user",
+      "communicationIntent": "enable task completion",
+      "visualContentEmphasis": "interaction/forms",
+      "confidence": "high",
+      "shortReason": "This is a procurement planning dashboard (Upphandlingsplanering) within the Clira B2B platform. It displays a Gantt-style timeline visualization with multiple planning items, navigation menus, and filter/export controls. The page enables users to view, manage, and create procurement plans, making it primarily a dashboard/application interface for internal organizational use.",
+      "llmMetadata": {
+        "inputTokens": 25045,
+        "outputTokens": 169,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site4": {
+      "primaryTheme": "Dashboard / application interface",
+      "secondaryTheme": "Informational / documentation",
+      "targetAudience": "internal user",
+      "communicationIntent": "enable task completion",
+      "visualContentEmphasis": "mixed",
+      "confidence": "high",
+      "shortReason": "This is a procurement management dashboard for internal users to manage and track procurement processes. It displays procurement details, documents, bidding information, and navigation tabs for different procurement stages. The layout uses a sidebar navigation, header with breadcrumbs, and content panels showing structured information with tables and downloadable documents—characteristic of an enterprise application interface designed for task completion and information management.",
+      "llmMetadata": {
+        "inputTokens": 22471,
+        "outputTokens": 167,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site40": {
+      "primaryTheme": "Dashboard / application interface",
+      "secondaryTheme": "Navigation / listing page",
+      "targetAudience": "internal user",
+      "communicationIntent": "enable task completion",
+      "visualContentEmphasis": "mixed",
+      "confidence": "high",
+      "shortReason": "This is an organizational structure dashboard displaying a hierarchical tree/flowchart diagram of company entities and sub-organizations. The page includes a left sidebar navigation menu, header with breadcrumbs, and a React Flow visualization component showing interconnected organization nodes. The design supports internal business operations with options to manage procurements, agreements, products, and planning - typical of enterprise B2B management platforms.",
+      "llmMetadata": {
+        "inputTokens": 23040,
+        "outputTokens": 172,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site5": {
+      "primaryTheme": "Dashboard / application interface",
+      "secondaryTheme": "Transactional / task-oriented",
+      "targetAudience": "internal user",
+      "communicationIntent": "enable task completion",
+      "visualContentEmphasis": "interaction/forms",
+      "confidence": "high",
+      "shortReason": "This is a procurement management platform (Esource by Clira) showing a messaging interface within a procurement process. The layout includes a sidebar navigation, message list, message composition form with rich text editor, file upload capabilities, and task-oriented messaging functionality. The primary purpose is to enable users to perform tasks (view/send messages, manage procurements) within an internal application workflow, not to persuade or inform externally.",
+      "llmMetadata": {
+        "inputTokens": 34569,
+        "outputTokens": 185,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site6": {
+      "primaryTheme": "Dashboard / application interface",
+      "secondaryTheme": "Navigation / listing page",
+      "targetAudience": "internal user",
+      "communicationIntent": "enable task completion",
+      "visualContentEmphasis": "mixed",
+      "confidence": "high",
+      "shortReason": "This is a procurement management dashboard (Esource by Clira) showing bid responses for a specific procurement. It displays a data table with bid submissions, navigation tabs for different procurement sections, filtering/search capabilities, and action buttons. The interface is designed for internal users (suppliers/procurement managers) to view, manage, and interact with procurement bids in a structured application environment.",
+      "llmMetadata": {
+        "inputTokens": 19028,
+        "outputTokens": 168,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site7": {
+      "primaryTheme": "Informational / documentation",
+      "secondaryTheme": "Navigation / listing page",
+      "targetAudience": "internal user",
+      "communicationIntent": "inform",
+      "visualContentEmphasis": "mixed",
+      "confidence": "high",
+      "shortReason": "This is a procurement platform dashboard displaying award decision details ('tilldelningsbeslut') for a specific procurement process. The page shows structured documentation with numbered sections, tabs for different procurement stages, and a sidebar navigation. It's designed for internal users managing procurement processes, with emphasis on information display and navigation between related procurement documents.",
+      "llmMetadata": {
+        "inputTokens": 18225,
+        "outputTokens": 155,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site8": {
+      "primaryTheme": "Dashboard / application interface",
+      "secondaryTheme": "Informational / documentation",
+      "targetAudience": "internal user",
+      "communicationIntent": "inform",
+      "visualContentEmphasis": "mixed",
+      "confidence": "high",
+      "shortReason": "This is an internal organizational dashboard (Esource platform) displaying company profile information for 'GlobålTech Sverige AB'. It contains a sidebar navigation menu, header with user controls, company overview data (org number, employees, revenue, address), contact information, credit rating, and review sections. The layout and structure (Ant Design components, breadcrumbs, tabs for different sections like 'About', 'Contact', 'Reviews', 'Departments') are characteristic of an internal management/information interface rather than a public-facing or transactional page.",
+      "llmMetadata": {
+        "inputTokens": 17136,
+        "outputTokens": 209,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    },
+    "site9": {
+      "primaryTheme": "Form-heavy / data-entry",
+      "secondaryTheme": "Dashboard / application interface",
+      "targetAudience": "internal user",
+      "communicationIntent": "collect input",
+      "visualContentEmphasis": "interaction/forms",
+      "confidence": "high",
+      "shortReason": "This is a company profile editing form with multiple input fields (text inputs, dropdowns, number inputs, file uploads, textarea) for updating organizational information like revenue, employees, address, description, CPV codes, logo, and cover image. The layout uses a dashboard-style interface with navigation menus and breadcrumbs, indicating it's part of a larger internal application (Esource platform). The primary purpose is data collection and form submission.",
+      "llmMetadata": {
+        "inputTokens": 29228,
+        "outputTokens": 186,
+        "model": "claude-haiku-4-5-20251001",
+        "stopReason": "end_turn"
+      }
+    }
+  }
+}

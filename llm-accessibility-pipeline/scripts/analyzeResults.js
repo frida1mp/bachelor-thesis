@@ -436,6 +436,88 @@ async function main() {
   lines.push('      r close to 0 = no correlation');
   lines.push('');
 
+  // Theme-based analysis
+  let themeData = null;
+  try {
+    themeData = await readJSON('data/themes/results.json');
+  } catch {
+    // Theme classification not available
+  }
+
+  if (themeData?.sites) {
+    const groupAndAverage = (groupKey) => {
+      const groups = {};
+      for (const site of perSite) {
+        const theme = themeData.sites[site.siteId];
+        if (!theme || theme.error) continue;
+        const key = theme[groupKey];
+        if (!key) continue;
+        if (!groups[key]) groups[key] = [];
+        groups[key].push(site);
+      }
+
+      return Object.entries(groups)
+        .map(([label, sites]) => {
+          const avgBaseline = sites.reduce((s, si) => s + si.baseline.total, 0) / sites.length;
+          const withIssues = sites.filter(si => si.baseline.total > 0);
+          const avgP1Red = withIssues.length > 0
+            ? withIssues.map(si => (si.baseline.total - si.prompt1.total) / si.baseline.total * 100)
+                .reduce((a, b) => a + b, 0) / withIssues.length
+            : null;
+          const avgP2Red = withIssues.length > 0
+            ? withIssues.map(si => (si.baseline.total - si.prompt2.total) / si.baseline.total * 100)
+                .reduce((a, b) => a + b, 0) / withIssues.length
+            : null;
+          return {
+            label,
+            siteCount: sites.length,
+            avgBaselineIssues: Number(avgBaseline.toFixed(1)),
+            avgPrompt1ReductionPct: avgP1Red !== null ? Number(avgP1Red.toFixed(1)) : null,
+            avgPrompt2ReductionPct: avgP2Red !== null ? Number(avgP2Red.toFixed(1)) : null,
+          };
+        })
+        .sort((a, b) => b.avgBaselineIssues - a.avgBaselineIssues);
+    };
+
+    comparison.byTheme = groupAndAverage('primaryTheme');
+    comparison.byTargetAudience = groupAndAverage('targetAudience');
+    comparison.byCommunicationIntent = groupAndAverage('communicationIntent');
+
+    await writeJSON('results/comparison.json', comparison);
+
+    const printTable = (title, rows) => {
+      lines.push(title);
+      lines.push('-'.repeat(95));
+      lines.push(
+        'Category'.padEnd(40) +
+          '| Sites'.padEnd(9) +
+          '| Avg Baseline'.padEnd(16) +
+          '| Avg P1 Red.'.padEnd(14) +
+          '| Avg P2 Red.'
+      );
+      lines.push('-'.repeat(95));
+
+      for (const row of rows) {
+        const p1 = row.avgPrompt1ReductionPct !== null ? row.avgPrompt1ReductionPct + '%' : 'N/A';
+        const p2 = row.avgPrompt2ReductionPct !== null ? row.avgPrompt2ReductionPct + '%' : 'N/A';
+        lines.push(
+          row.label.slice(0, 38).padEnd(40) +
+            `| ${String(row.siteCount).padEnd(7)}` +
+            `| ${String(row.avgBaselineIssues).padEnd(14)}` +
+            `| ${p1.padEnd(12)}` +
+            `| ${p2}`
+        );
+      }
+
+      lines.push('-'.repeat(95));
+      lines.push('');
+    };
+
+    printTable('BY THEME', comparison.byTheme);
+    printTable('BY TARGET AUDIENCE', comparison.byTargetAudience);
+    printTable('BY COMMUNICATION INTENT', comparison.byCommunicationIntent);
+  }
+
   const summaryPath = path.join(getProjectRoot(), 'results', 'summary.txt');
   await fs.ensureDir(path.dirname(summaryPath));
   await fs.writeFile(summaryPath, lines.join('\n'), 'utf-8');

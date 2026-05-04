@@ -1,0 +1,30 @@
+You are analyzing the purpose and communication style of a webpage based only on its HTML content.
+
+Classify the webpage into one primary page theme and optionally one secondary theme.
+
+Use only the categories below:
+1. Marketing / promotional
+2. Informational / documentation
+3. Transactional / task-oriented
+4. Form-heavy / data-entry
+5. Dashboard / application interface
+6. Navigation / listing page
+7. Legal / policy / administrative
+8. Other / unclear
+
+Also classify:
+- Target audience: customer, internal user, supplier, administrator, general public, unclear
+- Communication intent: persuade, inform, guide, collect input, enable task completion, unclear
+- Visual/content emphasis: visual appeal, textual information, interaction/forms, mixed, unclear
+
+Return only valid JSON in this format:
+
+{
+  "primaryTheme": "",
+  "secondaryTheme": "",
+  "targetAudience": "",
+  "communicationIntent": "",
+  "visualContentEmphasis": "",
+  "confidence": "",
+  "shortReason": ""
+}
